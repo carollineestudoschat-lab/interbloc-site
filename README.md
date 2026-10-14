@@ -57,3 +57,7 @@ A segunda etapa preserva a estrutura do site, os produtos e as fotografias ofici
 - O catálogo mantém as fotos originais: H6 recebe um enquadramento mais próximo; H8 fica limitado a 300 px e não recebe zoom no hover. Não há reconstrução, recoloração ou ampliação artificial dos arquivos.
 
 As capturas em `docs/previews/` correspondem ao refinamento atual. Consulte [a validação da etapa](docs/refinement-validation.md) para o escopo dos testes.
+
+## Nova revisão editorial — aguardando aprovação
+
+A branch `feat/editorial-refinement` contém uma proposta de refinamento dos textos, hierarquia e composição das seções, sem alterar o título principal, o logotipo ou as fotografias oficiais. Ela não foi incorporada à produção. Consulte [o resumo e a validação desta revisão](docs/editorial-review.md). As capturas `docs/previews/desktop.png` e `mobile.png` nesta branch mostram a nova proposta.
