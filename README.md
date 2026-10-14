@@ -1,6 +1,6 @@
 # Inter Bloc
 
-Site institucional em desenvolvimento com Next.js (App Router), TypeScript e Tailwind CSS. A página inicial é uma proposta visual em português; logotipo e fotografias oficiais já foram integrados; refinamento visual aguarda a aprovação da empresa. O catálogo apresenta H6 Retangular (6 cm) e H8 16 Faces (8 cm). O orçamento abre o WhatsApp oficial. A empresa não realiza instalação; entrega mediante consulta. Não há formulário ou publicação configurados.
+Site institucional com Next.js (App Router), TypeScript e Tailwind CSS. Design aprovado pela empresa, com logotipo e fotografias oficiais. O catálogo apresenta H6 Retangular (6 cm) e H8 16 Faces (8 cm). O orçamento abre o WhatsApp oficial. A empresa não realiza instalação; entrega mediante consulta. Não há formulário; a configuração de publicação na Vercel está em `vercel.json`.
 
 ## Ambiente
 
@@ -28,13 +28,13 @@ O servidor usa a porta 3000. Para conferir a resposta local, execute `curl --fai
 ## Estrutura
 
 - `src/app/page.tsx`: seções da página inicial.
-- `src/app/layout.tsx`: idioma e metadados; indexação por mecanismos de busca desativada durante o desenvolvimento.
-- `src/app/globals.css`: Tailwind e estilos da identidade visual provisória.
+- `src/app/layout.tsx`: idioma e metadados; indexação permitida para a versão pública.
+- `src/app/globals.css`: Tailwind e estilos da identidade visual aprovada.
 - `public/`: arquivos estáticos.
 
 Não há fontes ou imagens externas necessárias para renderizar a página. Os links do menu levam às seções reais da página. As imagens são os arquivos oficiais em `public/images`: logotipo original no cabeçalho e rodapé; H6/H8 no catálogo; pisos empilhados no hero; pátio e estoque na seção de produção. Os 10 PNG originais permanecem intactos. Next/Image gera versões otimizadas localmente. O H8 original tem 300 × 300 pixels; por isso a imagem do produto tem tamanho de exibição limitado. Animações respeitam a preferência por movimento reduzido.
 
-Nenhum deploy deve ser realizado antes da aprovação do design. `npm run build` gera apenas os arquivos locais de produção.
+A publicação foi autorizada após a aprovação do design. A branch `main` contém a versão de produção; `feat/interbloc-site` preserva o histórico do desenvolvimento. `npm run build` gera apenas os arquivos locais de produção; a integração Git da Vercel executa a implantação após o envio à branch de produção configurada no projeto.
 
 ## Capturas para revisão do design
 
