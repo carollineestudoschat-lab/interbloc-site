@@ -46,3 +46,14 @@ As capturas da versão atual estão salvas no próprio repositório e podem ser 
 ![Inter Bloc — desktop](docs/previews/desktop.png)
 
 ![Inter Bloc — mobile](docs/previews/mobile.png)
+
+## Refinamento editorial e movimento
+
+A segunda etapa preserva a estrutura do site, os produtos e as fotografias oficiais. O hero tem uma sequência de entrada para foto, identificação, título, descrição e orçamento. Os títulos das seções, imagens, informações dos produtos e contato recebem revelações discretas por rolagem.
+
+- `src/components/scroll-reveals.tsx`: um único Intersection Observer observa os elementos `data-reveal`, anima cada um uma vez e deixa de observá-lo. Não há biblioteca de animação nem listener contínuo de scroll.
+- `src/app/globals.css`: keyframes, atrasos, hover, feedback de toque e regras responsivas. `prefers-reduced-motion` desativa as animações, inclusive se a preferência mudar durante a navegação.
+- O conteúdo é visível no HTML inicial; a animação é aplicada somente ao entrar na tela. Sem JavaScript ou sem Intersection Observer, textos, imagens e links continuam disponíveis.
+- O catálogo mantém as fotos originais: H6 recebe um enquadramento mais próximo; H8 fica limitado a 300 px e não recebe zoom no hover. Não há reconstrução, recoloração ou ampliação artificial dos arquivos.
+
+As capturas em `docs/previews/` correspondem ao refinamento atual. Consulte [a validação da etapa](docs/refinement-validation.md) para o escopo dos testes.
