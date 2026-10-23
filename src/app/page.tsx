@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ScrollReveals } from "@/components/scroll-reveals";
+import InterblocHeaderHero from "@/components/interbloc-header-hero";
 
 const whatsapp = "https://wa.me/5585996028432";
 const quote = `${whatsapp}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento de pisos intertravados da Inter Bloc.")}`;
@@ -35,30 +36,8 @@ export default function Home() {
     <>
       <ScrollReveals />
       <a href="#conteudo" className="skip-link">Pular para o conteúdo</a>
-      <header className="site-header">
-        <a href="#inicio" className="brand" aria-label="Inter Bloc — início">
-          <Image src="/images/logo-interbloc.png" alt="INTER BLOC — Soluções em pré-moldados" width={1600} height={800} className="official-logo" preload />
-        </a>
-        <nav aria-label="Navegação principal">
-          <a href="#produtos">Produtos</a>
-          <a href="#sobre">A Inter Bloc</a>
-          <a className="nav-quote" href={quote}>Orçamento <Arrow /></a>
-        </nav>
-      </header>
+      <InterblocHeaderHero quoteHref={quote} />
       <main id="conteudo">
-        <section id="inicio" className="hero" aria-labelledby="hero-title">
-          <div className="hero-top"><span>FORTALEZA / CE</span><span>FABRICAÇÃO E VENDA</span></div>
-          <p className="hero-kicker">PISOS INTERTRAVADOS E PRÉ-MOLDADOS</p>
-          <h1 id="hero-title">A FORÇA<br />DO <span>CONCRETO.</span><br />EM CADA PISO.</h1>
-          <div className="hero-bottom">
-            <p className="hero-description">Fabricamos pisos intertravados de concreto em Fortaleza.<span>Modelos H6 e H8 para calçadas, áreas residenciais e circulação de veículos.</span></p>
-            <a className="button" href={quote}>Pedir orçamento <Arrow /></a>
-            <a className="explore" href="#produtos">Ver modelos H6 e H8 <Arrow /></a>
-          </div>
-          <div className="hero-art">
-            <Image src="/images/pilhas-pisos-intertravados.png" alt="Pilhas de pisos intertravados no pátio da Inter Bloc" fill sizes="(max-width: 800px) 100vw, 65vw" preload className="hero-photo" />
-          </div>
-        </section>
 
         <div className="service-strip">
           <p>Pisos intertravados <span>H6 / 6 cm · H8 / 8 cm</span></p>
