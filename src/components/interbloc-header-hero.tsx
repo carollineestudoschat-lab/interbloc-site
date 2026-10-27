@@ -304,19 +304,6 @@ export default function InterblocHeaderHero({
       <div className="ib-hero-shade" aria-hidden="true" />
 
       <div className="ib-hero-navigation">
-        <a
-          href="#inicio"
-          className="ib-hero-brand"
-          aria-label="Inter Bloc — início"
-        >
-          <Image
-            src="/images/logo-interbloc.png"
-            alt="INTER BLOC — Soluções em pré-moldados"
-            width={1600}
-            height={800}
-            preload
-          />
-        </a>
         <nav className="ib-hero-desktop-nav" aria-label="Navegação principal">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}>

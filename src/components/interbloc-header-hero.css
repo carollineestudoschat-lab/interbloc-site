@@ -90,15 +90,6 @@
   padding: 6px 5.5%;
   border-bottom: 1px solid #ffffff26;
 }
-.ib-hero-brand {
-  flex-shrink: 0;
-}
-.ib-hero-brand img {
-  display: block;
-  width: 194px;
-  height: 97px;
-  object-fit: contain;
-}
 .ib-hero .ib-hero-desktop-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -135,6 +126,7 @@
   border: 1px solid #ffffff69;
   background: transparent;
   font-size: 30px;
+  margin-left: auto;
 }
 .ib-hero .ib-hero-mobile-nav {
   display: none;
@@ -383,10 +375,6 @@
 @media (max-width: 600px) {
   .ib-hero-navigation {
     padding-block: 3px;
-  }
-  .ib-hero-brand img {
-    width: 150px;
-    height: 75px;
   }
   .ib-hero-location {
     font-size: 8px;
